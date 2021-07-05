@@ -11,6 +11,9 @@
         background-color: #ffaa22;
         color: #22aaff;
         }
+        header {
+        text-align: center;
+        }
     </style>
 </head>
 
