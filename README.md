@@ -19,7 +19,7 @@
 
 <body>
     <nav>
-
+        <a href="https://tohid9.github.io/sweet_home.html">Sweet Home</a>
         <a href="https://tohid9.github.io/">Home</a>
     </nav>
     <header>
