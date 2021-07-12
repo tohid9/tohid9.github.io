@@ -8,8 +8,8 @@
     <title>Mohammad Tohidul Hasan</title>
     <style>
         body {
-        background-color: #ffaa22;
-        color: #22aaff;
+        background-color: #ddd;
+        color: #444;
         };
         header {
         text-align: center;
