@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Hello Friend!</title>
-    <link rel="stylesheet" href="sweet_home.css">
     <link rel="shortcut icon" href="images/programming_1.jpg" type="image/jpg">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
     <style>
@@ -16,18 +15,28 @@
 
         header {
             text-align: center;
-            background-color: #0e4890;
-            color: rgb(16, 190, 141);
-            box-shadow: 10px 5px 12px 15px rgba(34, 24, 89, 0.9);
+            background-color: #859fa2;
+            background: linear-gradient(90deg, rgb(34, 3, 3), rgb(236, 70, 70), rgb(51, 13, 187), rgb(107, 153, 20));
+            padding: 1% 0 1% 0;
+            color: white;
+            box-shadow: 10px 5px 12px 15px rgba(34, 24, 89, 0.9), 12px 8px 15px 20px rgba(20, 205, 19, 0.25);
         }
 
         h1 {
             font-size: 2em;
+            position: relative;
+            top: auto;
+            color: white !important;
         }
 
         header p {
             font-family: "Zen Loop", cursive;
             font-weight: bold;
+            position: relative;
+            bottom: 15px;
+            animation-name: dancing;
+            animation-duration: 5s;
+            color: white !important;
         }
 
         #img-div {
@@ -56,12 +65,95 @@
         }
 
         :root {
-            --h3-color: #789;
+            --h3-color: rgba(0, 0, 0, 1);
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 300px) {
             figcaption {
-                font-size: 13px;
+                font-size: 15px;
+            }
+        }
+
+        #intro {
+            color: white;
+            line-height: 25px;
+            background: linear-gradient(90deg, rgb(80, 74, 74), rgb(42, 14, 145), #fc0, #0fc);
+        }
+
+        #intro a {
+            color: white;
+        }
+
+        a:hover {
+            background-color: skyblue;
+            color: rgb(225, 65, 172);
+        }
+
+        header p:hover {
+            transform: scale(1.2);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #fav-sport {
+            background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+        }
+
+
+        header h1 {
+            position: relative;
+            animation-name: colorful;
+            animation-duration: 5s;
+
+        }
+
+        @keyframes colorful {
+            0% {
+                color: rgba(0, 0, 0, 1);
+                text-align: left;
+            }
+
+            50% {
+                color: #431;
+                text-align: right;
+                opacity: 0.4;
+            }
+
+            100% {
+                color: rgba(2, 26, 2, 0.25);
+                text-align: left;
+                font-size: 50px;
+                opacity: 0.2;
+            }
+        }
+
+        #navbar {
+            font-weight: bolder;
+        }
+
+        #enjoyment {
+            background: repeating-linear-gradient(90deg, #fed 0px, #dec 25px, #ecb 110px, #cab 145px, #aaa 220px, #9af 325px);
+        }
+
+        @keyframes dancing {
+            0% {
+                color: rgba(0, 0, 0, 1);
+                text-align: left;
+            }
+
+            50% {
+                color: #431;
+                text-align: right;
+                opacity: 1;
+            }
+
+            100% {
+                color: rgba(2, 26, 2, 0.25);
+                text-align: left;
+                font-size: 50px;
+                opacity: 1;
             }
         }
     </style>
@@ -70,18 +162,16 @@
 <body>
     <nav id="navbar">
         <a href="#">Sweet Home</a>
-        <br>
-        <a href="https://tohid9.github.io/">Home</a>
     </nav>
     <header>
-        <h1>Mohammad Tohidul Hasan</h1>
-        <p>a man who look for problems only to have fun solving them</p>
+        <h1>Hi there, Tohid and Sakib here!</h1>
+        <p>I look for problems only to have fun solving them</p>
     </header>
     <main>
         <div id="img-div">
             <figure>
-                <img id="center-img" src="images/programming_2.jpg" alt="Two Computers Showing Coding">
-                <figcaption>Hey! does not this picture make you understand what business I am in? </figcaption>
+                <img id="center-img" src="images/programming_2.jpg" alt="Som coding displayed on a screen">
+                <figcaption>Some coding, huh?</figcaption>
             </figure>
         </div>
         <div id="intro">
@@ -104,12 +194,24 @@
             </p>
 
         </div>
-        <div>
+        <div id="enjoyment">
             <h2>What I do enjoy</h2>
             <p>I love craeting things in programming language that add values in people's lives. Well, to do that I have
                 to be very good in several programming languages. That's why I have been learning some languages
                 including Python, JavaScript, PHP etc.</p>
         </div>
+        <div id="fav-sport">
+            <h2>My favorite cricket teams</h2>
+            <p> Here are my favorite cricket teams
+            <ol>
+                <li>Bangladesh Cricket Team</li>
+                <li>Pakistan Cricket Team</li>
+                <li>Chattogram Challengers</li>
+                <li>Quetta Gladietors</li>
+            </ol>
+            </p>
+        </div>
+
     </main>
 </body>
 
